@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "develop": "nodemon start",
+    "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/kenjihikmatullah/bruni-backend/issues"
   },
-  "homepage": "https://github.com/kenjihikmatullah/bruni-backend#readme"
+  "homepage": "https://github.com/kenjihikmatullah/bruni-backend#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.13.3",
+    "shortid": "^2.2.16",
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
 }

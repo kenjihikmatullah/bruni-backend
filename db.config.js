@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 // Prepare connection
-const HOST = '172.19.0.4'
+const HOST = 'database'
 const USERNAME = 'kenji'
 const PASSWORD = 'kenji-X456UR'
 const DATABASE = 'bruni'

@@ -6,7 +6,7 @@ router.get('/:urlCode', async (req, res) => {
   const { urlCode } = req.params
 
   try {
-    const url = Url.findOne({ urlCode })
+    const url = await Url.findOne({ urlCode })
 
     if (url) {
       return res.redirect(url.longUrl)

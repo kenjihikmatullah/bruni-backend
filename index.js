@@ -7,10 +7,12 @@ const app = express()
 connection.once('open', () => console.log('Connected to database'))
 connection.on('error', e => console.log(`Failed to connect to database: ${e.message}`))
 
-// Routes
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json({
   extended: false
 }))
+
+// Routes
 app.use('/', require('./routes/redirect'))
 app.use('/api/url', require('./routes/url'))
 

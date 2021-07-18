@@ -1,7 +1,6 @@
 const express = require('express')
 const shortid = require('shortid')
 const Url = require('../models/Url')
-
 const router = express.Router()
 
 const BASE_URL = 'https://bru.ni'
